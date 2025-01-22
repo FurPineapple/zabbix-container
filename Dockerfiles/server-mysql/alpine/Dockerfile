@@ -97,10 +97,8 @@ RUN set -eux && \
     mkdir -p ${ZABBIX_USER_HOME_DIR}/modules && \
     mkdir -p ${ZABBIX_USER_HOME_DIR}/snmptraps && \
     mkdir -p ${ZABBIX_USER_HOME_DIR}/ssh_keys && \
-    mkdir -p ${ZABBIX_USER_HOME_DIR}/ssl && \
-    mkdir -p ${ZABBIX_USER_HOME_DIR}/ssl/certs && \
-    mkdir -p ${ZABBIX_USER_HOME_DIR}/ssl/keys && \
-    mkdir -p ${ZABBIX_USER_HOME_DIR}/ssl/ssl_ca && \
+    mkdir --parents \
+        ${ZABBIX_USER_HOME_DIR}/ssl/{certs,keys,ssl_ca} && \
     mkdir -p /usr/lib/zabbix/alertscripts && \
     mkdir -p /usr/lib/zabbix/externalscripts && \
     mkdir -p /usr/share/doc/zabbix-server-mysql && \
