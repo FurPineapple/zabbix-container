@@ -17,9 +17,8 @@ ENV TERM=xterm \
     MIBDIRS=/usr/share/snmp/mibs:/var/lib/zabbix/mibs MIBS=+ALL \
     NMAP_PRIVILEGED="" \
     ZABBIX_USER_HOME_DIR="/var/lib/zabbix" \
-    ZABBIX_CONF_DIR="/etc/zabbix"
-
-ENV ZBX_DB_NAME="dummy_db_name" \
+    ZABBIX_CONF_DIR="/etc/zabbix" \
+    ZBX_DB_NAME="dummy_db_name" \
     ZBX_FPINGLOCATION="/usr/sbin/fping" \
     ZBX_LOADMODULEPATH="${ZABBIX_USER_HOME_DIR}/modules" \
     ZBX_SNMPTRAPPERFILE="${ZABBIX_USER_HOME_DIR}/snmptraps/snmptraps.log" \
