@@ -1,4 +1,4 @@
-# syntax=docker/dockerfile:1
+# syntax=docker/dockerfile:1.7
 ARG OS_BASE_IMAGE=alpine:3.21
 ARG MAJOR_VERSION=7.2
 ARG ZBX_VERSION=${MAJOR_VERSION}.2
